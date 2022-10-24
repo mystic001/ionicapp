@@ -1,0 +1,7 @@
+{
+  "name": "firstionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

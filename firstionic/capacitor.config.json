@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "firstionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
