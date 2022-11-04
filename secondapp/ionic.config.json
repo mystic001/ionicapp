@@ -1,0 +1,7 @@
+{
+  "name": "secondapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
