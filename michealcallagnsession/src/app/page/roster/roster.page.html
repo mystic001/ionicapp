@@ -1,9 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Roster</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="add" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Icon Buttons</ion-title>
   </ion-toolbar>
+
+
 </ion-header>
 
 <ion-content>
+
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let student of students$ | async">
+      <ion-item>
+        <ion-icon slot = "start" name="person-outline"></ion-icon>
+        <ion-label>{{student.lastName}}, {{student.firstName}}</ion-label>
+      </ion-item>
+
+    </ion-item-sliding>
+
+  </ion-list>
 
 </ion-content>

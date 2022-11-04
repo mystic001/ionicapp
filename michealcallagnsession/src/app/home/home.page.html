@@ -1,10 +1,28 @@
 <ion-content>
-  <ion-card>
+  <ion-card button = "true"
+  [routerLink] = "['/roster']"
+  color = "primary"
+  routerDirection = "forward">
 
       <img width = '500px' height = '400px'
+
       objectFit = 'contain'
       src = "../../assets/images/shoe.jpeg" alt= "shoepic">
+
+      <ion-card-header>
+        <ion-card-title>Card Title</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+
+  <ion-button expand="full" color="light"  [routerLink] = "['/roster']">Go to roster</ion-button>
+      </ion-card-content>
+
+
   </ion-card>
+
 </ion-content>
 
 

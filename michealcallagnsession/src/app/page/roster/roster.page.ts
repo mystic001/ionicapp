@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
+import { Student } from 'src/app/classes/student';
+import { StudentService } from 'src/app/services/student.service';
 
 @Component({
   selector: 'app-roster',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RosterPage implements OnInit {
 
-  constructor() { }
+  students$: Observable<Student[]>;
+  constructor(private studentsService:StudentService) {
+    this.students$ = this.studentsService.allStudents()
+  }
+
+
 
   ngOnInit() {
+    console.log("hello world")
   }
 
 }

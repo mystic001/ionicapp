@@ -17,4 +17,6 @@ import { RosterPage } from './roster.page';
   ],
   declarations: [RosterPage]
 })
-export class RosterPageModule {}
+export class RosterPageModule {
+
+}

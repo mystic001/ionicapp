@@ -131,6 +131,9 @@ export class StudentService {
     }
   }
 
+  public allStudents(): Observable<Student[]> {
+    return this.students$.asObservable();
+  }
 
   private async getAllStudents(): Promise<Student[]>{
     const allKeys = await Storage.keys();
